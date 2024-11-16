@@ -1,4 +1,90 @@
-Výzvy při práci se Seleniem. no fíííha.
-<p>
-<a href="Prvni_stranka.html">Zpět na úvodní stránku</a>
-</p>
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+    <body>
+        <h1>Hlavní výzvy při práci se Selenium</h1>
+            <ol>
+                <li><h2>Dynamické a složité webové stránky</h2>
+                    <p><strong>Problém:</strong></p> 
+                    <p>
+                        Mnoho moderních webových aplikací používá dynamické obsahové prvky, které se mění pomocí AJAXu, JavaScriptu, nebo React, což může způsobit, že je obtížné synchronizovat testy.
+                    </p>
+                    <p><strong>Výzva:</strong></p>
+                    <p>
+                        Čekání na elementy, než budou interagovatelné, může být komplikované, pokud není správně implementováno explicitní čekání nebo iframes a pop-up okna.
+                    </p>    
+                    <p><strong>Řešení:</strong></p>
+                    <p>
+                        Používání explicitního čekání (WebDriverWait) a implicitního čekání pro zajištění správného načtení elementů. Také je důležité správně pracovat s iframe a pop-up okny.
+                    </p>
+                <li><h2>Práce s různými prohlížeči</h2></li>
+                    <p><strong>Problém:</strong></p> 
+                    <p>
+                        I když Selenium podporuje mnoho prohlížečů (Chrome, Firefox, Edge, Safari), každý prohlížeč se může chovat mírně jinak. Testy, které fungují na jednom prohlížeči, nemusí být úspěšné na jiném.
+                    </p>
+                    <p><strong>Řešení:</strong></p> 
+                    <p>
+                        Pravidelně provádět testy na více prohlížečích a verzích. Používání Selenium Grid pro paralelní testování na různých prohlížečích a platformách.
+                    </p>
+                <li><h2>Pomalé testy a dlouhá doba běhu</h2></li>
+                    <p><strong>Problém:</strong></p> 
+                    <p>Automatizované testy mohou být časově náročné, zejména pokud testuješ složité webové aplikace s velkým množstvím interakcí nebo při paralelním běhu testů na více prohlížečích.
+                    </p>
+                    <p><strong>Výzva:</strong></p>
+                    <p>
+                        Nadměrná doba běhu testů může zpomalit celý proces vývoje a testování, což může být problém v rychlých CI/CD cyklech.
+                    </p>
+                    <p><strong>Řešení:</strong></p>
+                        <ul>
+                            <li>
+                                Optimalizovat testy (používat paralelní testování přes Selenium Grid nebo cloudové služby).
+                            </li>
+                            <li>
+                                Použití headless režimu pro rychlejší běh testů bez grafického zobrazení prohlížeče.
+                            </li>
+                            <li>
+                                Použití menšího množství testů v rámci základního smoke testování.
+                            </li>      
+                <li><h2>Údržba testů</h2></li>
+                    <p><strong>Problém:</strong></p> 
+                    <p>
+                        Testy, které byly napsány pro jednu verzi aplikace, se mohou stát křehkými a vyžadují neustálou údržbu, pokud se UI aplikace mění.
+                    </p>
+                    <p><strong>Výzva:</strong></p>
+                    <p>
+                        Změny v UI: Pokud se elementy na stránce mění (např. změna ID, třídy nebo struktury DOM), testy mohou přestat fungovat a je potřeba je upravit.
+                    </p>
+                    <p><strong>Řešení:</strong></p>
+                        <ul>
+                            <li>
+                                Používat robustní selektory (např. CSS selektory místo ID, pokud jsou více stabilní).
+                            </li>
+                            <li>
+                                Implementovat Page Object Model (POM), což je designový vzor, který umožňuje snadnou správu a údržbu testů tím, že odděluje interakce s webovou stránkou od testovací logiky.
+                            </li>
+                        </ul>
+                <li><h2>Bezpečnost a přístup k aplikacím</h2></li>
+                    <p><strong>Problém:</strong></p> 
+                    <p>
+                        Mnoho aplikací, které testujeme, jsou chráněné přihlašováním, CAPTCHAs, nebo jinými bezpečnostními opatřeními.
+                    </p>
+                    <p><strong>Výzva:</strong></p>
+                    <p>
+                        Testy mohou selhat kvůli nutnosti se přihlašovat nebo vyplňovat CAPTCHA, což je těžké automatizovat.
+                    </p>
+                    <p><strong>Řešení:</strong></p>
+                        <ul>
+                            <li>
+                                Používat testovací účty s přístupem do všech potřebných sekcí aplikace.
+                            </li>
+                            <li>
+                                Pokud je to možné, zakázat CAPTCHAs pro testovací prostředí nebo používat mocking pro testování.
+                            </li>
+                        </ul>
+        <p>
+            <a href="Prvni_stranka.html">Zpět na úvodní stránku</a>
+            </p>
+    </body>
+
+</html>

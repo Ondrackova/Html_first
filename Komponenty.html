@@ -1,4 +1,84 @@
-Zde jsou vypsány všechny komponenty selenia. 
+<html>
+    <header>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </header>
+    <body>
+        <h1>Hlavní komponenty selenia</h1>
+            <ol>
+                <li><h2>Selenium WebDriver</h2></li>
+                    <p><strong>Popis:</strong></p>
+                    <p>
+                        Selenium WebDriver je nejdůležitější komponenta Selenia, která umožňuje automatizaci interakcí s webovými prohlížeči. WebDriver poskytuje API pro řízení prohlížeče, jako je například otevírání stránek, klikání na elementy, zadávání textu, a získávání informací z webových stránek.                      
+                    </p>
+                    <p><strong>Výhody:</strong></p>
+                        <ul>
+                            <li>
+                            Podporuje různé prohlížeče (Chrome, Firefox, Safari, Edge, atd.).
+                            </li>
+                            <li>
+                            Umožňuje ovládání prohlížeče ve skutečném režimu (neheadless).
+                            </li>
+                            <li>
+                            Je rychlý a poskytuje přímý přístup k prohlížeči (na rozdíl od staršího Selenium RC).
+                            </li>
+                        </ul>
+                    <p><strong>Příklad použití:</strong></p>
+                    <p>
+                        Pomocí WebDriveru můžeš napsat test, který simuluje akce uživatele na webu (např. kliknutí, vyplnění formuláře, atd.).
+                    </p>
+                <li><h2>Selenium Grid</h2></li>
+                    <p><strong>Popis:</strong></p>
+                    <p>
+                        Selenium Grid je komponenta, která umožňuje spouštět testy paralelně na několika různých strojích a prohlížečích. Tento nástroj je ideální pro testování na různých platformách (Windows, Linux, Mac) nebo pro testování na různých verzích prohlížečů současně.
+                    </p>
+                    <p><strong>Výhody:</strong></p>
+                        <ul>
+                            <li><strong>Paralelní testování:</strong></li>
+                                <p>
+                                    Spouští testy na více strojích a prohlížečích, což výrazně zkracuje dobu testování.
+                                </p>
+                                <p>
+                                    Můžeš spouštět testy na vzdálených strojích, což je užitečné pro CI/CD (Continuous Integration/Continuous Deployment).
+                                </p>
+                                <p><strong>Příklad použití:</strong></p>
+                                <p>Pokud máš testy, které musí být provedeny na více prohlížečích nebo platformách, Selenium Grid ti umožní distribuovat testy na různé servery nebo stroje.</p>    
+                        </ul>
+                    <p><strong>Architektura:</strong></p>
+                        <ul>
+                            <li>
+                                Hub: Centrální bod, který přijímá testovací požadavky a distribuuje je na Node.
+                            </li>
+                            <li>
+                                Node: Počítač nebo server, který spouští testy na určitém prohlížeči.
+                            </li>
+                        </ul>
+                <li><h2>Selenium IDE</h2></li>
+                    <p><strong>Popis:</strong></p>
+                    <p>
+                        Selenium IDE je rozšíření pro prohlížeče Firefox a Chrome, které poskytuje jednoduché uživatelské rozhraní pro nahrávání a přehrávání testů. Je to ideální nástroj pro začátečníky, kteří chtějí začít s automatizovaným testováním bez nutnosti psaní kódu.
+                    </p>
+                    <p><strong>Výhody:</strong></p>
+                        <ul>
+                            <li>
+                                Snadné používání: Nahrávání a přehrávání testů bez nutnosti psaní kódu.
+                            </li>
+                            <li>
+                                Generování kódu: Selenium IDE generuje kód ve formátu, který může být exportován do různých programovacích jazyků (Java, Python, C#, JavaScript).
+                            </li>
+                            <li>
+                                Podpora pro prohlížeče: Podporuje Firefox a Chrome.
+                            </li>
+                        </ul>
+                    <p><strong>Příklad použití:</strong></p>
+                        <p>Můžeš jednoduše nahrát testovací kroky, které chceš provést na webu, a poté je přehrát nebo exportovat jako kód pro pozdější použití.</p>       
+            </ol>
+
+
+        <h1>Závěr</h1>
+        <p>Selenium je komplexní nástroj, který poskytuje různé komponenty pro různé potřeby v automatizaci testování webových aplikací. Hlavní komponenty zahrnují WebDriver (pro ovládání prohlížečů), Grid (pro paralelní testování), IDE (pro nahrávání a přehrávání testů), a Client Libraries (pro integraci s různými jazyky). Selenium je flexibilní a škálovatelné, což ho činí ideálním pro testování webových aplikací v různých prostředích a na různých platformách.
+        </p>
 <p>
 <a href="Prvni_stranka.html">Zpět na úvodní stránku</a>
 </p>
+    </body>
+</html>

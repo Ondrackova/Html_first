@@ -1,25 +1,25 @@
 h1 {
-    color: rgb(220, 29, 131);
-    background-color: antiquewhite;
+    color: #3a0717;    
+    background-color: #976575;
 }
 
 h2 {
     color: black;
-    background-color: goldenrod;
+    background-color: #E4AFC0;
 }
 
 h3 {
-    color: violet;
-    background-color: rgb(11, 158, 50);
+    color: rgb(70, 4, 70);
+    background-color: #76A4B1;
 }
 
 h4 {
-    color: brown;
-    background-color: rgb(9, 29, 129);
+    color: rgb(18, 11, 153);
+    background-color: #6D8E97;
 }
 
 #selenium {
-    background-color: slategray;
+    background-color: #F1EFD2;
 }
 
 #vyhody {
